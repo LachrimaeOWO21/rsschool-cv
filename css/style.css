@@ -2,51 +2,112 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1, 5;
-  color: #4d2323;
-}
-
 * {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
+  line-height: 1.5;
+  margin: 0;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
+.main {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left-column,
+.right-column {
+  border: 1px solid red;
+  margin: 10px;
+  padding: 0;
+}
+
+.left-column {
+  width: 350px;
+  background-color: #2c323d;
+  color: aliceblue;
+}
+
+.left-column h2 {
+  text-align: center;
+  background-color: #626873;
+}
+
+.right-column {
+  width: 542px;
+}
+
+.right-column h2 {
+  background-color: #d6d9e0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   list-style: none;
+  transition: 0.5s;
+  background-color: #d1d4b0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
 }
 
-.nav-link {
-  padding: 0px 20px;
+.nav-item {
+  padding: 0 20px;
   line-height: 50px;
 }
 
-#profile-photo {
-  width: 200px;
-  height: 200px;
+.nav-item a {
+  color: #525344;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 
-.section {
-  width: 50%;
+.nav-item a:hover {
+  color: #cad621;
 }
 
-.main-container {
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #cad621;
+}
+
+.footer {
+  background-color: #626873;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
